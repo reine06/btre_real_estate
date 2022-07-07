@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Custom -->
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} ?20220507">
+    <link rel="stylesheet" href=" {% static 'css/lightbox.min.css' %} ">
+    <title>BTRE Real-Estate | {% block title %} {% endblock  %} </title>
+</head>
+<body>
+   
+    <!-- topbar -->
+    {% include "partials/__topbar.html" %}
+    <!-- navbar -->
+    {% include "partials/__navbar.html" %}
+    <!-- alerts -->
+    {% include "partials/__alerts.html" %}
+    
+    <!-- content -->
+    {% block content %}
+    
+    {% endblock %}
+    
+    
+    
+    
+    <!-- footer -->
+    {% include "partials/footer.html" %}
+    <script src=" {% static 'js/jquery-3.3.1.min.js' %}   "></script>
+    <script src=" {% static 'js/bootstrap.bundle.min.js' %} "></script>
+    <script src=" {% static 'js/lightbox.min.js' %}"></script>
+    <script src="  {% static 'js/main.js' %}   "></script>
+</body>
+</html>
